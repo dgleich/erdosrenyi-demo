@@ -24,10 +24,10 @@ er-150.gif: er_evolution_figure.m
 index.html: erdosrenyi.md
 	maruku erdosrenyi.md -o index.html
 
-zipfiles := components.m neato_layout.m graph_to_dot.m matlab-graphviz-license.txt \
+zipfiles := components.m neato_layout.m graph_to_dot.m largest_component.m matlab-graphviz-license.txt \
             evolution.m generate.m er_evolution_figure.m \
             erdosrenyi.md er-50.gif er-100.gif er-150.gif
 
 erdos_renyi.zip: $(zipfiles)
-	zip add erdos_reyni.zip $(zipfiles)
+	zip erdos_reyni.zip $(zipfiles)
 	

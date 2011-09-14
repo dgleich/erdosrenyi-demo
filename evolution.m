@@ -41,10 +41,10 @@ Gt = G(thres);
 %%
 % Define a sequence of probabilities to explore.
 t1 = linspace(0, thres_giant, 50);
-t2 = linspace(thres_big, thres_conn, 100);
+t2 = linspace(thres_giant, thres_conn, 100);
 
 % we want to pause things at the emergence of the giant component
-steps = [t1 ones(1,40)*thres_big t2];
+steps = [t1 ones(1,40)*thres_giant t2];
 nframes = length(steps);
 
 comp_size_history = [];
@@ -71,7 +71,7 @@ for frame=1:nframes
     [comps comp_sizes] = components(Gcur); % get the sizes
     comp_size_history = [comp_size_history comp_sizes];
     comp_step_history = [comp_step_history ones(1,length(comp_sizes))*p];
-    plot(comp_step_history, comp_size_history, '.');
+    plot(comp_step_history, comp_size_history, 'o');
     title('size of components');
     xlabel('p');
     

@@ -42,10 +42,13 @@ Some of these files need some edits due to changes in graphviz
 and Matlab.
 
 I've packaged all the updated Matlab files into a single zip file
-* [Erdős-Réyni matlab files](erdos_reyni.zip)
+or github repository
+
+* [Erdős-Rényi matlab files](erdos_reyni.zip)
+* [Erdős-Rényi github repo](https://github.com/dgleich/erdosrenyi-demo) @ github
+
 This includes `components.m`, `neato_layout.m` (and support files),
-as well as all the matlab scripts here.
-It is also available as a git repository!
+as well as all the matlab scripts here. 
 
 ### Installing graphviz
 
